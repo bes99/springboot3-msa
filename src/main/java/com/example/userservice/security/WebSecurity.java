@@ -33,6 +33,7 @@ public class WebSecurity {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
         http.csrf().disable();
+        http.authorizeHttpRequests().requestMatchers("/actuator/**").permitAll();
         http.authorizeHttpRequests().requestMatchers("/**")
                         .permitAll()
                         .and()
