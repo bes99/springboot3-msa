@@ -1,5 +1,7 @@
 spring:
   cloud:
+    compatibility-verifier:
+      enabled: false
     config:
       uri: http://127.0.0.1:8888
       name: user-service

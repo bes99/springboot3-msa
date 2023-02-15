@@ -46,6 +46,9 @@ dependencies {
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '3.0.1'
     implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-bus-amqp', version: '4.0.0'
     implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign', version: '4.0.0'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-circuitbreaker-resilience4j', version: '3.0.0'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-zipkin', version: '2.2.8.RELEASE'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-sleuth', version: '3.1.6'
 
 
 }
