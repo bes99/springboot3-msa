@@ -5,6 +5,16 @@ server:
 spring:
   application:
     name: order-service
+  cloud:
+    compatibility-verifier:
+      enabled: false
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    enabled: true
+  sleuth:
+    sampler:
+      probability: 1.0
+
   h2:
     console:
       enabled: true
@@ -13,9 +23,12 @@ spring:
       path: /h2-console
   datasource:
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:tcp://localhost/~/test
-    username: sa
-    password:
+    url: jdbc:h2:mem:testdb
+    #tcp://localhost/~/test
+#    url: jdbc:mariadb://localhost:3307/mydb
+#    driver-class-name: org.mariadb.jdbc.Driver
+#    username: root
+#    password: test1357
 
   jpa:
     hibernate:

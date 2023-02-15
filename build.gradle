@@ -36,6 +36,11 @@ dependencies {
     implementation group: 'org.modelmapper', name: 'modelmapper', version: '3.1.1'
     implementation group: 'jakarta.validation', name: 'jakarta.validation-api', version: '3.0.2'
     implementation group: 'org.hibernate.validator', name: 'hibernate-validator', version: '8.0.0.Final'
+    implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '3.1.1'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.30'
+    implementation group: 'org.springframework.kafka', name: 'spring-kafka', version: '3.0.1'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-zipkin', version: '2.2.8.RELEASE'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-sleuth', version: '3.1.6'
 }
 
 dependencyManagement {
